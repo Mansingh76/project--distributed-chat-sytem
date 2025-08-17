@@ -1,28 +1,33 @@
-# Distributed Chat System
+# Distributed Chat System 💬
 
-A **real-time, distributed chat application** that allows multiple users to communicate across a network with low latency and fault tolerance.
-
----
-
-## Features
-
-- Multi-user chat support  
-- Real-time message delivery  
-- Distributed architecture for scalability  
-- Fault-tolerant message handling  
-- User authentication and management  s
-- Message history storage  
-- Group chat support  
-- Optional encryption for secure messaging  
+A multi-user **chat application** built with **Java, MySQL, and TCP sockets**.  
+Implements **OS (multithreading), CN (client-server networking), DBMS (persistence), and OOP (design patterns)** in one project.
 
 ---
 
-## Tech Stack
+## ✨ Features
+- User registration/login with **invite tokens**
+- **Chat rooms** and **private messaging**
+- Persistent **chat history** in MySQL
+- **Multithreaded server** handling multiple clients
+- Secure password storage using **PBKDF2**
+- Commands:
+  - `/register <user> <pass> <token>`
+  - `/login <user> <pass>`
+  - `/join <room>`
+  - `/msg <room> <text>`
+  - `/pm <user> <text>`
+  - `/history <target> [limit]`
 
-- **Python 3.x** – Core language for backend logic  
-- **Socket Programming / WebSockets** – Real-time communication  
-- **Redis / Kafka (optional)** – Distributed message queue and pub-sub system  
-- **SQLite / PostgreSQL / MongoDB** – Message and user storage  
-- **Threading / Asyncio** – Concurrent message handling  
-- **Docker (optional)** – Containerization for distributed deployment  
-- **HTML/CSS/JS or Streamlit** – Frontend interface (optional)
+---
+
+## ⚙️ Tech Stack
+- **Java** (Sockets, Threads, JDBC)
+- **MySQL** (Schema + persistence)
+- **Maven** (dependencies & build)
+- **Gson** (JSON serialization)
+
+---
+
+## 🚀 Setup
+
